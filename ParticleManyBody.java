@@ -254,11 +254,15 @@ public class ParticleManyBody {
 	   
 	    /*
 	     *Print every 5th time step to the file
+	     *This code snippet was used for the full Halley comet orbit.
 	     */
-	     if(i%5==0){
+	    /* if(i%5==0){
 	    vmdEntry(particleArray, i+2, output);
 	    }
-
+		*/
+		
+		//Save the current new 3D positions
+		vmdEntry(particleArray, i+2, output);
         }
 
 	/* ***********************************************
